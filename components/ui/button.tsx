@@ -1,21 +1,21 @@
 import * as React from "react";
 import clsx from "clsx";
 
-export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-export const Input = React.forwardRef<HTMLInputElement, InputProps>(
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, ...props }, ref) => (
-    <input
+    <button
       ref={ref}
       className={clsx(
-        "w-full rounded-xl border border-white/15 bg-black/30 px-3 py-2 text-sm",
-        "placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20",
+        "px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700",
         className
       )}
       {...props}
     />
   )
 );
-Input.displayName = "Input";
-export default Input;
 
+Button.displayName = "Button";
+
+export default Button;

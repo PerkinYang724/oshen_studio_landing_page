@@ -1,3 +1,4 @@
+\"use client\";
 import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Rocket, Wrench, Lightbulb, TrendingUp, Mail, Youtube, Instagram, Link as LinkIcon, BookOpen, Sparkles } from "lucide-react";

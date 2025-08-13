@@ -1,7 +1,13 @@
-\"use client\";
+"use client";
+
+import React, { useEffect, useMemo, useState } from "react";
+import { motion } from "framer-motion";
+import { ArrowRight, Rocket, Wrench, Lightbulb, TrendingUp, Mail, Youtube, Instagram, Link as LinkIcon, BookOpen, Sparkles } from "lucide-react";"use client";
+
 import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Rocket, Wrench, Lightbulb, TrendingUp, Mail, Youtube, Instagram, Link as LinkIcon, BookOpen, Sparkles } from "lucide-react";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
